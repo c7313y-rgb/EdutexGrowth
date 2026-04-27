@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0b1120"/><stop offset=".55" stop-color="#1d4ed8"/><stop offset="1" stop-color="#d1a954"/>
+</linearGradient>
+<filter id="sh"><feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#000" flood-opacity=".38"/></filter>
+<radialGradient id="glow" cx=".75" cy=".2" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#g)"/>
+<rect width="1200" height="800" fill="url(#glow)"/>
+<g opacity=".18" stroke="#fff" fill="none">
+<path d="M80 600 C280 460 430 700 650 520 S980 390 1140 520" stroke-width="5"/>
+<path d="M0 300 C260 220 460 380 700 280 S990 180 1200 300" stroke-width="3"/>
+</g>
+<g transform="translate(150 40)" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" filter="url(#sh)" opacity=".92">
+<path d="M250 430 C320 310 410 310 470 430 C530 310 620 310 690 430 L640 510 C575 455 525 455 470 525 C415 455 365 455 300 510 Z"/><path d="M470 430 V590"/>
+</g>
+<rect x="72" y="610" width="780" height="112" rx="32" fill="#07111f" opacity=".42" stroke="#fff" stroke-opacity=".24"/>
+<text x="105" y="665" fill="#ffffff" font-size="42" font-family="Arial, sans-serif" font-weight="900">Verry Works</text>
+<text x="108" y="704" fill="#e5edf8" font-size="22" font-family="Arial, sans-serif" opacity=".9">スマートグラス×対話AI×現場ナレッジ</text>
+</svg>

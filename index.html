@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edutex Growth Vision Map</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-orbit"></div>
+
+<header class="hero">
+  <nav class="nav">
+    <div class="brand"><span>E</span><div><b>Edutex Growth Vision Map</b><small>Business Correlation / Momentum / Execution</small></div></div>
+    <div class="navlinks">
+      <a href="#map">相関図</a><a href="#portfolio">事業群</a><a href="#roadmap">成長導線</a>
+      <button id="exportCsv">CSV</button><button id="exportJson">JSON</button>
+    </div>
+  </nav>
+  <div class="hero-inner">
+    <section class="hero-copy">
+      <p class="eyebrow">現場実装型AI事業開発会社</p>
+      <h1>教育を起点に、<br>AI事業が連鎖して伸びる。</h1>
+      <p class="lead">Edutexは単発受託ではなく、教育OS・研修・観光・不動産・ロボティクス・フィジカルAIを連動させ、各パートナーの販路と現場課題を“売れる事業”へ変換する成長ポートフォリオです。</p>
+      <div class="hero-actions"><a class="btn primary" href="#map">全体像を見る</a><a class="btn" href="#portfolio">案件を確認</a></div>
+    </section>
+    <section class="hero-card">
+      <img src="assets/hero-concept.svg" alt="Edutex vision">
+      <div class="pulse-grid">
+        <div><b>8</b><span>成長テーマ</span></div><div><b>4</b><span>連携PF</span></div><div><b>3</b><span>即収益候補</span></div>
+      </div>
+    </section>
+  </div>
+</header>
+
+<main>
+<section class="thesis">
+  <div class="thesis-card main">
+    <span class="badge gold">Core Thesis</span>
+    <h2>Edutexの魅力は「案件数」ではなく、各事業が互いに送客・技術転用・信用補完する構造にある。</h2>
+  </div>
+  <div class="thesis-card"><b>短期</b><p>AI講座・不動産AI・JTB PGMで現金化を先行。</p></div>
+  <div class="thesis-card"><b>中期</b><p>副担任mirAI NEXTとifLinkで学校・自治体導入を拡大。</p></div>
+  <div class="thesis-card"><b>長期</b><p>Verry Works、Verry、kebbiでフィジカルAI/ロボットOSへ拡張。</p></div>
+</section>
+
+<section id="map" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">Correlation Map</p><h2>事業相関図を中核にした全体俯瞰</h2></div>
+    <p>添付の相関図をそのまま組み込み、右側に「今どこが伸びるか」を読み解くレイヤーを重ねました。</p>
+  </div>
+  <div class="map-layout">
+    <div class="map-panel">
+      <div class="map-toolbar"><span>Original Correlation Map</span><button id="zoomMap">拡大表示</button></div>
+      <img src="assets/edutex-correlation-map.png" alt="Edutex事業相関図">
+    </div>
+    <aside class="map-insights">
+      <h3>一目で見る成長エンジン</h3>
+      <div class="insight active"><b>① 教育OS</b><p>副担任mirAI NEXTを中核に、学校・企業・自治体・教育委員会を接続。</p></div>
+      <div class="insight"><b>② 即収益</b><p>AI講座、不動産AI、JTB PGMで先に売上化し、開発投資を回す。</p></div>
+      <div class="insight"><b>③ 横展開</b><p>Verry Works、Verry、kebbiへRAG・音声・ダッシュボード資産を転用。</p></div>
+      <div class="insight"><b>④ Edutexの勝ち筋</b><p>販売・保守の下請けではなく、OS・成果KPI・運用改善を握る。</p></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="growth-loop">
+    <div class="loop-center">Edutex<br><span>Growth OS</span></div>
+    <div class="loop-item i1">教育OS<br><small>学校/自治体</small></div>
+    <div class="loop-item i2">AI講座<br><small>即収益</small></div>
+    <div class="loop-item i3">JTB PGM<br><small>観光/探究</small></div>
+    <div class="loop-item i4">不動産AI<br><small>高単価PoC</small></div>
+    <div class="loop-item i5">Verry Works<br><small>現場AI</small></div>
+    <div class="loop-item i6">kebbi / Verry<br><small>ロボットUI</small></div>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">Portfolio Cards</p><h2>投資・参画したくなる事業カード</h2></div>
+    <div class="filters"><input id="search" placeholder="事業・企業・キーワードで検索"><select id="filter"><option value="">全領域</option></select></div>
+  </div>
+  <div id="cards" class="cards"></div>
+</section>
+
+<section id="roadmap" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">Growth Roadmap</p><h2>12か月の成長ストーリー</h2></div>
+    <p>見せ方の軸を「案件一覧」から「資金回収→信用形成→横展開」に変更しています。</p>
+  </div>
+  <div class="roadmap">
+    <div><span>0-3か月</span><h3>キャッシュを作る</h3><p>AI講座、不動産AI、JTB PGMの提案・LP・PoCを優先。</p></div>
+    <div><span>3-6か月</span><h3>教育OSを標準化</h3><p>N-E.X.T.類型別パッケージ、申請テンプレ、学校導入メニューを整備。</p></div>
+    <div><span>6-12か月</span><h3>フィジカルAIへ拡張</h3><p>Verry Works、Verry、kebbiへ知識DB・音声・ダッシュボードを横展開。</p></div>
+    <div><span>12か月以降</span><h3>OS/ライセンス収益化</h3><p>単発受託から、年額運用・成果KPI・ライセンス・RSへ移行。</p></div>
+  </div>
+</section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modal-body"><button id="close">×</button><div id="modalContent"></div></div></div>
+
+<script id="data" type="application/json">[{"id": "next", "name": "N-E.X.T.ハイスクール / 副担任mirAI NEXT", "area": "教育OS", "stage": "重点提案・PoC設計", "progress": 72, "momentum": 92, "cash": "中速", "potential": "大", "visual": "next.svg", "role": "学校・企業・自治体をつなぐハブステーション", "why": "授業生成、評価、学習ログ、キャリア連携を一体化。教育委員会・学校・企業の利害が重なる中核OS。", "partners": ["イトーキ", "NOLTYプランナーズ", "朝日新聞社グループ", "JTB", "サンリアリティ", "市川工業高校", "栃木県教育委員会", "マイナビ", "スタディバレー"], "next": ["類型1〜3/統合型の導入モデルを1枚化", "教育委員会向け申請テンプレート化", "企業コンテンツ登録の営業資料化"], "platform": true}, {"id": "works", "name": "Verry Works", "area": "フィジカルAI", "stage": "KDDI連携・PoC化", "progress": 66, "momentum": 86, "cash": "中速", "potential": "大", "visual": "works.svg", "role": "現場作業を目と耳で支えるAI業務支援", "why": "スマートグラス、音声対話、RAG、研修データを組み合わせ、製造・保守・物流・薬局などへ横展開可能。", "partners": ["KDDI", "エーアイ", "Embex Education"], "next": ["PoC業務を1職種に絞る", "SOP/RAGテンプレ整備", "KDDI向け稟議資料の完成"], "platform": false}, {"id": "verry", "name": "Verry", "area": "対話AI UI", "stage": "MVP設計", "progress": 54, "momentum": 74, "cash": "中速", "potential": "中", "visual": "verry.svg", "role": "人とAI/ロボットの接点になる対話パートナー", "why": "Verry Works、kebbi、接客、教育、家庭向けに転用できるUI資産。音声・人格・画面表現を標準化する。", "partners": ["コギト", "京都府", "エーアイ", "Qbit"], "next": ["MVP画面設計", "音声ペルソナ設計", "Verry Works連携導線化"], "platform": false}, {"id": "training", "name": "AI講座（企業）", "area": "法人研修", "stage": "即営業・即収益", "progress": 82, "momentum": 90, "cash": "最速", "potential": "中〜大", "visual": "training.svg", "role": "最短で現金化できる入口商品", "why": "開発負荷が低く、法人研修として販売しやすい。受講企業からVerry Works、不動産AI、教育OSへ展開できる。", "partners": ["OCTOBA", "Embex Education"], "next": ["標準カリキュラム化", "営業LP公開", "認定制度・修了証設計"], "platform": true}, {"id": "jtb", "name": "JTB PGMプラットフォーム / 販売LP", "area": "観光×探究", "stage": "LP・申込導線整備", "progress": 70, "momentum": 88, "cash": "中速", "potential": "中〜大", "visual": "jtb.svg", "role": "修学旅行を企業探究・成果発表へ変えるマーケットプレイス", "why": "JTBの学校営業力に、企業プログラム選択、見積、作品展示、購入導線を重ねることで継続収益化しやすい。", "partners": ["JTB東京教育事業部", "コギト", "三越伊勢丹", "フレーベル館"], "next": ["企業プログラム一覧拡充", "JTB申込サイト連携", "作品ギャラリー・購入導線完成"], "platform": true}, {"id": "iflink", "name": "ifLinkアプリ / Edutex Camp", "area": "STEAM・共創", "stage": "基礎開発・営業投入", "progress": 58, "momentum": 76, "cash": "中速", "potential": "中", "visual": "iflink.svg", "role": "社会課題をクエスト化する学習アプリ", "why": "学校アカウント、生徒課金、企業コンテンツ追加により、継続率とリテンションを作れる。", "partners": ["edutex camp", "TDSL", "JTB", "コギト"], "next": ["クエストUI強化", "先生ダッシュボード実装", "TDSL/JTB営業資料化"], "platform": true}, {"id": "kebbi", "name": "kebbi", "area": "ロボットOS", "stage": "商流設計・商品化", "progress": 61, "momentum": 78, "cash": "やや遅い", "potential": "中", "visual": "kebbi.svg", "role": "ロボットが成果を出す“使い方のOS”", "why": "機体販売ではなく、教育・介護の成果KPI、シナリオ、運用改善を握ることで継続収益化する。", "partners": ["レスター", "ジェネラス", "NUWA", "丸文", "住友電工", "学研グループ"], "next": ["教育版/介護版の2商品化", "丸文・レスターとの責任境界整理", "成果ダッシュボード定義"], "platform": false}, {"id": "estate", "name": "不動産AIエージェント", "area": "不動産AI", "stage": "提案・PoC化", "progress": 74, "momentum": 91, "cash": "速い", "potential": "最大級", "visual": "estate.svg", "role": "商業施設PMの判断遅れを減らす高単価AI", "why": "代表の不動産開発実績とAI実装を直結できる。空室対策、テナント誘致、解約リスク対応でROIを示しやすい。", "partners": ["OCTOBA", "大和ハウスグループ"], "next": ["PoC提案4社化", "空室/解約リスクの業務フロー整理", "本番ARRプラン提示"], "platform": false}]</script>
+<script src="app.js"></script>
+</body>
+</html>
